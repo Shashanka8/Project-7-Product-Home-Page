@@ -13,6 +13,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* ------------- Navbar start ------------- */
 
 nav {
@@ -30,8 +34,9 @@ nav {
 }
 
 .nav-item {
-  padding: 0 30px;
+  margin: 0 30px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .nav-item.active-item {
@@ -40,6 +45,13 @@ nav {
 
 img[alt="actions"] {
   margin-left: 120px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  height: 32px;
+  cursor: pointer;
 }
 
 /* ------------- Navbar end ------------- */
@@ -199,3 +211,115 @@ img[alt="headphone"] {
 /* ------------- Right section end ------------- */
 
 /* ------------- Section end ------------- */
+
+@media screen and (max-width: 1199px) {
+  body {
+    padding: 2% 3%;
+  }
+  img[alt="logo"] {
+    height: 40px;
+  }
+  .nav-items {
+    margin-left: 70px;
+  }
+  .nav-item {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  img[alt="actions"] {
+    margin-left: 20px;
+  }
+  .intro-section {
+    padding-bottom: 0;
+  }
+  .sub-headlines {
+    padding: 20px 40px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-items {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  img[alt="actions"] {
+    margin-left: 200px;
+  }
+  .left-section h3 {
+    font-size: 32px;
+  }
+  .left-section h3 img {
+    height: 32px;
+  }
+  .left-section h1 {
+    font-size: 48px;
+  }
+  .sub-headlines {
+    padding: 20px;
+  }
+  .sub-headline {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .sub-headline img {
+    padding: 6px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .left-section .action-btns {
+    margin-top: 30px;
+  }
+  .left-section .action-btn {
+    padding: 8px 14px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  img[alt="headphone"] {
+    height: 380px;
+    margin-top: 40px;
+  }
+  .right-section .action-btn {
+    padding: 8px 14px;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  img[alt="actions"] {
+    display: none;
+  }
+  .intro-section {
+    flex-direction: column-reverse;
+  }
+  img[alt="headphone"] {
+    margin-top: 0;
+  }
+  .dots .dot {
+    height: 22px;
+    width: 22px;
+    border-radius: 11px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img[alt="headphone"] {
+    height: 320px;
+  }
+  .discount {
+    left: -5%;
+    height: 100px;
+  }
+  .discount-content {
+    position: absolute;
+    left: 2%;
+  }
+  .discount-content h4 {
+    font-size: 10px;
+  }
+  .discount-content h1 {
+    font-size: 30px;
+  }
+}
